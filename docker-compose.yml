@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  argosbx-nezha:
+    # 使用 GitHub Container Registry 镜像
+    image: ghcr.io/zhaotianshi/argosbx-nezha:latest
+    # 本地构建请注释上面一行，取消下面一行注释
+    # build: .
+    container_name: argosbx-nezha
+    restart: always
+    ports:
+      - "3000:3000"
+      # - "${vmpt}:${vmpt}"
+      # - "${vlpt}:${vlpt}"
+      # - "${sopt}:${sopt}"
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Shanghai

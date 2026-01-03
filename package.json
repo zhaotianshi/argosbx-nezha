@@ -1,0 +1,9 @@
+{
+  "name": "argosbx-nezha",
+  "version": "1.0.0",
+  "description": "ArgoSBX with Nezha monitoring support",
+  "main": "index.js",
+  "dependencies": {
+    "ws": "^8.14.2"
+  }
+}
